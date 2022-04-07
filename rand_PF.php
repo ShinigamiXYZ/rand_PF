@@ -23,7 +23,7 @@ $start_time = microtime(true);
     if (rand($pile, $face) == $pile) // si le resultat aleatoire donne Pile
     {
         $compteurP++; // incrementation du compteur
-        if ($compteurP == 25){ // une fois le compteur atteint dune maniere consecutive
+        if ($compteurP == 45){ // une fois le compteur atteint dune maniere consecutive
             $x = false; // sort de la boucle
         }
     }
@@ -46,7 +46,7 @@ echo "<br>" . (($execution_time/60)/60)/24 . " days";
 
 
 
-echo "<h1><br>Ont obtien 25 piles en ligne apres $rep repetitions</h1>";
+echo "<h1><br>Ont obtien 45 piles en ligne apres $rep repetitions</h1>";
 
 ?>
 
