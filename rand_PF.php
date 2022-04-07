@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>50_PF</title>
+    <title>50PF</title>
 </head>
 <body>
 <h3>maxPile in a row.</h3>
@@ -17,24 +17,24 @@ $compteurP = 0;
 $x = true;
 $start_time = microtime(true);
 
-    while ($x) // Tant que true - loop
+    while ($x)  // boucle tant que vrai
 {
     
-    if (rand($pile, $face) == $pile)
+    if (rand($pile, $face) == $pile) // si le resultat aleatoire donne Pile
     {
-        $compteurP++;  // si le resultat est Pile, augmentation du compteur.
-        if ($compteurP == 45){ // si le compteur reach 50 , on sort de la Boucle
-            $x = false;
+        $compteurP++; // incrementation du compteur
+        if ($compteurP == 25){ // une fois le compteur atteint dune maniere consecutive
+            $x = false; // sort de la boucle
         }
     }
     else 
     {
-        $compteurP = 0; // si le resultat nest pas face, on restart le compteur a 0.
+        $compteurP = 0; // Si face compteur a 0
     }
-    $rep++; // compteur de rep dans la boucle
+    $rep++; // rep de la boucle
       
 }
-} 
+ 
 $end_time = microtime(true);
 
 $execution_time = ($end_time - $start_time); // temps dexecution 
@@ -46,7 +46,7 @@ echo "<br>" . (($execution_time/60)/60)/24 . " days";
 
 
 
-echo "<h1><br>Ont obtien 45 piles en ligne apres $rep repetitions</h1>";
+echo "<h1><br>Ont obtien 25 piles en ligne apres $rep repetitions</h1>";
 
 ?>
 
