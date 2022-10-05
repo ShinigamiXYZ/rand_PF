@@ -10,7 +10,7 @@
 <h3>maxPile in a row.</h3>
 
 <?php
-ini_set('max_execution_time', 0);
+ini_set('max_execution_time', 0); // removes default time limit ( sets to infinite ).
 $pile = 0;
 $face = 1;
 $compteurP = 0;
@@ -23,7 +23,7 @@ $start_time = microtime(true);
     if (rand($pile, $face) == $pile) // si le resultat aleatoire donne Pile
     {
         $compteurP++; // incrementation du compteur
-        if ($compteurP == 45){ // une fois le compteur atteint dune maniere consecutive
+        if ($compteurP == 45){ // une fois le compteur atteint dune maniere consecutive // modifiez nombre voulue.
             $x = false; // sort de la boucle
         }
     }
