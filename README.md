@@ -1,7 +1,7 @@
 # rand_PF
-Trying to reach 50 Piles in a row
+Trying to reach 50 Heads in a row
 
-le nb de Piles en ligne est interchangable.
+you can modify number of heads that you want at line 
 
 Maxed reached so far (35)
 
