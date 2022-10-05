@@ -1,7 +1,7 @@
 # rand_PF
 Trying to reach 50 Heads in a row
 
-you can modify number of heads that you want at line 
+you can modify number of heads that you want at line 26 in rand_pf.php
 
 Maxed reached so far (35)
 
