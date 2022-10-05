@@ -1,5 +1,5 @@
 # rand_PF
-Trying to reach 50 Heads in a row
+Trying to reach the most consecutive heads in a row.
 
 you can modify number of heads that you want at line 26 in rand_pf.php
 
